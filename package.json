@@ -1,5 +1,5 @@
 {
-  "name": "profound-address-control",
+  "name": "@profound-software/profound-address-control",
   "version": "6.0.0-beta1",
   "description": "ProFound Address Control Package",
   "main": "index.js",
