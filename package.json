@@ -1,0 +1,23 @@
+{
+  "name": "profound-address-control",
+  "version": "6.0.0-beta1",
+  "description": "ProFound Address Control Package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wize1/profound-address-control.git"
+  },
+  "keywords": [
+    "profound",
+    "address"
+  ],
+  "author": "Dmitri Lipski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wize1/profound-address-control/issues"
+  },
+  "homepage": "https://github.com/wize1/profound-address-control#readme"
+}
