@@ -1,0 +1,119 @@
+.pfc-pp-container {
+  border: 1px solid grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr 200px;
+  grid-template-rows: 34px 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "search search results-title" "map map results" "map map results";
+}
+.pfc-pp-container .pfc-pp-search-container {
+  font-size: 10px;
+  grid-area: search;
+  display: flex;
+  padding: 6px;
+}
+.pfc-pp-container .pfc-pp-search-container > label {
+  margin-right: 6px;
+  font-size: 12px;
+}
+.pfc-pp-container .pfc-pp-search-container > button {
+  margin-left: 6px;
+  font-size: 12px;
+}
+.pfc-pp-container .pfc-pp-search-container > input {
+  flex: 1;
+  font-size: 12px;
+}
+.pfc-pp-container .pfc-pp-map-container {
+  grid-area: map;
+  padding: 6px;
+  padding-top: 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+.pfc-pp-container .pfc-pp-map-container .pfc-pp-map {
+  border: 1px solid grey;
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.pfc-pp-container .pfc-pp-locations-title {
+  grid-area: results-title;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+.pfc-pp-container .pfc-pp-locations-container {
+  grid-area: results;
+  overflow-y: auto;
+}
+.pfc-pp-container .pfc-pp-locations-container > .selected .pfc-location-name {
+  font-weight: bold;
+}
+.pfc-pp-container .pfc-pp-locations-container .pfc-pp-location-container:hover {
+  border: 1px solid blue;
+}
+.pfc-pp-container .pfc-pp-locations-container .pfc-pp-location-container {
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 12px;
+}
+.pfc-pp-container .pfc-pp-locations-container .pfc-pp-location-container .pfc-location-name {
+  font-size: 14px;
+}
+.pfc-pp-container .pfc-pp-locations-container .pfc-pp-location-container > .pfc-location-distance {
+  font-size: 10px;
+  font-weight: bold;
+  color: blue;
+}
+.pfc-pp-container .pfc-pp-locations-container .pfc-pp-location-container > .pfc-location-address {
+  margin-top: 10px;
+  font-size: 11px;
+}
+.pfc-pp-container .pfc-pp-locations-container .pfc-pp-location-container > .pfc-location-hours {
+  margin-top: 10px;
+  font-size: 11px;
+}
+.pfc-pp-container .pfc-pp-locations-container .pfc-pp-location-container .pfc-location-icon {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+
+.pfc-autocomplete {
+  background: white;
+  z-index: 1000;
+  overflow: auto;
+  box-sizing: border-box;
+  border: 1px solid rgba(50, 50, 50, 0.6);
+}
+
+.pfc-autocomplete * {
+  font: inherit;
+}
+
+.pfc-autocomplete > div {
+  padding: 4px 8px;
+}
+
+.pfc-autocomplete .group {
+  background: #eee;
+}
+
+.pfc-autocomplete > div:hover:not(.group) {
+  background: #eeeeee;
+  cursor: pointer;
+}
+
+.pfc-autocomplete > div.selected {
+  background: #cccccc;
+  cursor: pointer;
+}
